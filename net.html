@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-like Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #101010;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header img {
+            width: 150px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 2em;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 1em;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e50914;
+        }
+
+        .featured {
+            padding: 9em 5em;
+            text-align: center;
+        }
+
+        .featured h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            color: #e50914;
+        }
+
+        .featured p {
+            font-size: 1.5em;
+            color: #ccc;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 2em;
+        }
+
+        .grid-item {
+            flex: 0 0 300px;
+            margin: 1em;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1em 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="netflix1/logo.png" alt="">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="featured">
+        <h1>Popular on Netflix</h1>
+        <p>Watch TV shows and movies anytime, anywhere — personalized for you.</p>
+    </div>
+
+    <div class="grid">
+        <!-- Add more grid items with images -->
+        <div class="grid-item">
+            <img src="netflix1/m1.png" alt="Movie 1">
+        </div>
+        <div class="grid-item">
+            <img src="netflix1/m2.png" alt="Movie 2">
+        </div>
+        <div class="grid-item">
+            <img src="netflix1/m3.png" alt="Movie 3">
+        </div>
+        <div class="grid-item">
+            <img src="netflix1/m4.png" alt="Movie 4">
+        </div>
+        <div class="grid-item">
+            <img src="netflix1/m5.png" alt="Movie 4">
+        </div>
+        <div class="grid-item">
+            <img src="netflix1/m6.png" alt="Movie 4">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Netflix Clone</p>
+    </footer>
+</body>
+</html>
